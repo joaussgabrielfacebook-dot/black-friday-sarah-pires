@@ -69,6 +69,18 @@
     .banner{aspect-ratio:auto}
   }
 </style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','876660425250793');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=876660425250793&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 <main class="wrap">
@@ -118,5 +130,13 @@
     <p class="legal">© 2026 Sarah Pires Piercing • Todos os direitos reservados • CNPJ 65.060.024/0001-81 • Senador Canedo, GO</p>
   </footer>
 </main>
+<script>
+  // Evento Lead: dispara ao clicar em qualquer link do grupo de WhatsApp (botao verde e banner)
+  document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      if(window.fbq){fbq('track','Lead',{content_name:'Grupo VIP Black Friday'});}
+    });
+  });
+</script>
 </body>
 </html>
