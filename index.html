@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday | Grupo VIP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+  /* ===== EDITE AQUI ===== */
+  :root{
+    --bg:#1b1c19;
+    --text:#e8e5dc;
+    --muted:rgba(232,229,220,.79);
+    --line:rgba(232,229,220,.12);
+    --pink:#f7a8c8;
+    --pink-strong:#ff8fbf;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:894px;margin:0 auto;padding:40px 16px 48px}
+  h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:400;letter-spacing:-.03em;line-height:1.05;text-align:center}
+  .sub{margin-top:12px;font-size:.92rem;letter-spacing:.025em;line-height:1.62;color:var(--muted)}
+  hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  h2{font-size:clamp(1.9rem,4vw,2.75rem);font-weight:400;letter-spacing:-.025em;line-height:1.25;margin-bottom:24px}
+  .copy p{font-size:.92rem;letter-spacing:.025em;line-height:1.62;color:var(--muted);margin-bottom:16px}
+
+  /* Banner (recriado em CSS – substitua por <img> se preferir a arte original) */
+  .banner{display:block;text-decoration:none;background:#000;color:#fff;text-align:center;
+    padding:22px 20px;aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:center;gap:12px;
+    transition:transform .2s ease}
+  .banner:hover{transform:translateY(-3px)}
+  .b-brand{color:var(--pink);font-weight:800;letter-spacing:.06em;font-size:.95rem}
+  .b-title{font-weight:900;font-size:clamp(2rem,4.6vw,2.6rem);letter-spacing:-.01em;line-height:1}
+  .b-off{color:var(--pink-strong);font-weight:900;font-size:clamp(1.8rem,4vw,2.3rem);line-height:1}
+  .b-desc{font-size:1.05rem;line-height:1.35}
+  .b-btn{background:var(--pink);color:#111;font-weight:800;font-size:1.15rem;padding:14px 10px;border-radius:12px;margin-top:6px}
+  .b-foot{font-size:.85rem;opacity:.9}
+
+  .logo{display:block;width:88px;height:88px;margin:0 auto 16px;border-radius:50%;object-fit:cover;
+    box-shadow:0 0 0 1px var(--line),0 8px 30px rgba(247,168,200,.12)}
+
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;
+    background:#25d366;color:#0b1f12;font-weight:800;font-size:1.05rem;text-decoration:none;
+    padding:16px 22px;border-radius:12px;box-shadow:0 8px 24px rgba(37,211,102,.25);
+    transition:transform .2s ease,box-shadow .2s ease}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(37,211,102,.35)}
+  .cta svg{width:24px;height:24px;flex:none}
+  .hero{text-align:center}
+  .hero .sub{text-align:center}
+  .media .cta{margin-top:16px}
+  .cta-note{margin-top:10px;font-size:.78rem;color:var(--muted);text-align:center}
+
+  footer{font-size:.78rem;color:var(--muted);text-align:center;line-height:1.7}
+  footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin-bottom:18px}
+  footer a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent}
+  footer a:hover{border-bottom-color:var(--pink)}
+  footer .legal{opacity:.75;font-size:.72rem}
+  @media (max-width:720px){
+    .wrap{padding-top:20px}
+    .logo{width:68px;height:68px;margin-bottom:10px}
+    hr{margin:18px 0}
+    .banner{padding:16px 16px;gap:8px}
+    .b-btn{padding:11px 10px}
+    .media .cta{margin-top:12px}
+    .sub{text-align:center}
+    .grid{grid-template-columns:1fr;gap:32px}
+    .banner{aspect-ratio:auto}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <img class="logo" src="https://sarahpirespiercing.com.br/cdn/shop/files/622608743_18114577243620622_2085147339392812849_n-removebg-preview.png?width=300" alt="Logotipo Sarah Pires Piercer" onerror="this.style.display='none'">
+  <header class="hero">
+  <h1>Sarah Pires Piercing</h1>
+  <p class="sub">Seja vip e receba as promoções antecipadas com descontos nunca visto antes!</p>
+  </header>
+
+  <hr>
+
+  <section class="grid">
+    <div class="media">
+    <a class="banner" href="https://chat.whatsapp.com/IkVNprw6iro29f0pekDskC" target="_blank" rel="noopener" title="ENTRE NO GRUPO VIP" aria-label="Entrar no Grupo VIP">
+      <span class="b-brand">SARAH PIRES PIERCING</span>
+      <span class="b-title">BLACK FRIDAY</span>
+      <span class="b-off">ATÉ 65% OFF</span>
+      <span class="b-desc">As joias mais desejadas com descontos exclusivos.</span>
+      <span class="b-btn">ENTRAR NO GRUPO VIP</span>
+      <span class="b-foot">Acesso antecipado • Ofertas exclusivas</span>
+    </a>
+    <a class="cta" href="https://chat.whatsapp.com/IkVNprw6iro29f0pekDskC" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg>
+      Quero entrar no Grupo VIP
+    </a>
+    <p class="cta-note">Gratuito • Você pode sair do grupo quando quiser</p>
+    </div>
+
+    <div class="copy">
+      <h2>Seu acesso exclusivo começa aqui</h2>
+      <p>Prepare-se para a maior Black Friday da Sarah Pires Piercing!</p>
+      <p>No nosso Grupo VIP, você terá acesso antecipado às promoções, descontos de até 65% OFF, ofertas exclusivas, brindes especiais e a senha para acessar nosso site durante a Black Friday.</p>
+      <p>Entre agora e não perca nenhuma oportunidade! 💗</p>
+    </div>
+  </section>
+
+  <hr>
+  <footer>
+    <nav aria-label="Links legais">
+      <a href="https://sarahpirespiercing.com.br/policies/terms-of-service" target="_blank" rel="noopener">Termos de Uso</a>
+      <a href="https://sarahpirespiercing.com.br/pages/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+      <a href="https://sarahpirespiercing.com.br/pages/politica-de-troca-e-devolucao" target="_blank" rel="noopener">Trocas e Devoluções</a>
+      <a href="https://sarahpirespiercing.com.br/" target="_blank" rel="noopener">Loja oficial</a>
+      <a href="https://www.instagram.com/sarahpirespiercer" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <p>Atendimento: segunda a sábado, das 8h às 18h • WhatsApp (62) 99467-3778</p>
+    <p class="legal">© 2026 Sarah Pires Piercing • Todos os direitos reservados • CNPJ 65.060.024/0001-81 • Senador Canedo, GO</p>
+  </footer>
+</main>
+</body>
+</html>
